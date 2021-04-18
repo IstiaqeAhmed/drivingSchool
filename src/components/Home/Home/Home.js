@@ -7,7 +7,7 @@ import Testimonials from "../Testimonials/Testimonials";
 import Blogs from "../Blogs/Blogs";
 import Contract from "../Contract/Contract";
 import Trainers from "../Trainers/Trainers";
-import Footer from "../Footer/Footer";
+import Footer from "../../Shared/Footer/Footer";
 
 const Home = () => {
   return (
