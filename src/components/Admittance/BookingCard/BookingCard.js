@@ -25,6 +25,7 @@ const BookingCard = ({ booking, date }) => {
             modalIsOpen={modalIsOpen}
             appointmentOn={booking.subject}
             closeModal={closeModal}
+            date={date}
           ></AdmissionForm>
         </div>
       </div>
