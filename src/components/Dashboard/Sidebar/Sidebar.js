@@ -8,6 +8,7 @@ import {
   faCalendar,
   faGripHorizontal,
   faUsers,
+  faUserPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
 
@@ -36,6 +37,11 @@ const Sidebar = () => {
         <li>
           <Link to="/driving/prescriptions" className="text-white">
             <FontAwesomeIcon icon={faFileAlt} /> <span>Course Plan</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/addDoctor" className="text-white">
+            <FontAwesomeIcon icon={faUserPlus} /> <span>Add Admittance</span>
           </Link>
         </li>
         <li>
