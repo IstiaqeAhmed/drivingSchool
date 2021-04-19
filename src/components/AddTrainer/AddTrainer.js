@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "../Dashboard/Sidebar/Sidebar";
 
-const AddAdmittance = () => {
+const AddTrainer = () => {
   const [info, setInfo] = useState({});
   const [file, setFile] = useState(null);
   const handleBlur = (e) => {
@@ -21,7 +21,7 @@ const AddAdmittance = () => {
     formData.append("name", info.name);
     formData.append("email", info.email);
 
-    fetch("http://localhost:5000/addAnAdmittance", {
+    fetch("http://localhost:5000/addATrainer", {
       method: "POST",
       body: formData,
     })
@@ -41,7 +41,7 @@ const AddAdmittance = () => {
         className="col-md-10 p-4 pr-5"
         style={{ position: "absolute", right: 0, backgroundColor: "#F4FDFB" }}
       >
-        <h5 className="text-brand">Add an Admittance</h5>
+        <h5 className="text-brand">Add a Trainer</h5>
 
         <form onSubmit={handleSubmit}>
           <div class="form-group">
@@ -87,4 +87,4 @@ const AddAdmittance = () => {
   );
 };
 
-export default AddAdmittance;
+export default AddTrainer;

@@ -6,7 +6,7 @@ import Admittance from "./components/Admittance/Admittance/Admittance";
 import Login from "./components/Login/Login/Login";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import AllStudents from "./components/AllStudents/AllStudents/AllStudents";
-import AddAdmittance from "./components/AddAdmittance/AddAdmittance";
+import AddTrainer from "./components/AddTrainer/AddTrainer";
 
 export const UserContext = createContext();
 
@@ -32,8 +32,8 @@ function App() {
           <Route path="/dashboard/allStudents">
             <AllStudents></AllStudents>
           </Route>
-          <Route path="/addDoctor">
-            <AddAdmittance></AddAdmittance>
+          <Route path="/addTrainer">
+            <AddTrainer></AddTrainer>
           </Route>
         </Switch>
       </Router>
