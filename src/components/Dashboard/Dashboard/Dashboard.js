@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
-import AdmittanceByDate from "./AdmittanceByDate/AdmittanceByDate";
+import AdmittanceByDate from "../AdmittanceByDate/AdmittanceByDate";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 

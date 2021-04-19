@@ -19,27 +19,27 @@ const Sidebar = () => {
     >
       <ul className="list-unstyled">
         <li>
-          <Link to="/doctor/dashboard" className="text-white">
+          <Link to="/driving/dashboard" className="text-white">
             <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
           </Link>
         </li>
         <li>
-          <Link to="/doctor/appointment" className="text-white">
-            <FontAwesomeIcon icon={faCalendar} /> <span>Appointment</span>
+          <Link to="/driving/appointment" className="text-white">
+            <FontAwesomeIcon icon={faCalendar} /> <span>Admission</span>
           </Link>
         </li>
         <li>
-          <Link to="/doctor/patients" className="text-white">
-            <FontAwesomeIcon icon={faUsers} /> <span>Patients</span>
+          <Link to="/driving/patients" className="text-white">
+            <FontAwesomeIcon icon={faUsers} /> <span>Students</span>
           </Link>
         </li>
         <li>
-          <Link to="/doctor/prescriptions" className="text-white">
-            <FontAwesomeIcon icon={faFileAlt} /> <span>Prescriptions</span>
+          <Link to="/driving/prescriptions" className="text-white">
+            <FontAwesomeIcon icon={faFileAlt} /> <span>Course Plan</span>
           </Link>
         </li>
         <li>
-          <Link to="/doctor/setting" className="text-white">
+          <Link to="/driving/setting" className="text-white">
             <FontAwesomeIcon icon={faCog} /> <span>Setting</span>
           </Link>
         </li>
