@@ -5,7 +5,7 @@ import Home from "./components/Home/Home/Home";
 import Admittance from "./components/Admittance/Admittance/Admittance";
 import Login from "./components/Login/Login/Login";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
-// import AllStudents from "./components/AllStudents/AllStudents/AllStudents";
+import AllStudents from "./components/AllStudents/AllStudents/AllStudents";
 
 export const UserContext = createContext();
 
@@ -28,9 +28,9 @@ function App() {
           <Route path="/dashboard/admittance">
             <Dashboard></Dashboard>
           </Route>
-          {/* <Route path="/dashboard/allStudents">
+          <Route path="/dashboard/allStudents">
             <AllStudents></AllStudents>
-          </Route> */}
+          </Route>
         </Switch>
       </Router>
     </UserContext.Provider>
