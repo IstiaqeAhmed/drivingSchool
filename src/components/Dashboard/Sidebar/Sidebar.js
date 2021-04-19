@@ -20,17 +20,17 @@ const Sidebar = () => {
     >
       <ul className="list-unstyled">
         <li>
-          <Link to="/driving/dashboard" className="text-white">
+          <Link to="/admittance" className="text-white">
             <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
           </Link>
         </li>
         <li>
-          <Link to="/driving/appointment" className="text-white">
+          <Link to="/dashboard/admittance" className="text-white">
             <FontAwesomeIcon icon={faCalendar} /> <span>Admission</span>
           </Link>
         </li>
         <li>
-          <Link to="/driving/patients" className="text-white">
+          <Link to="/dashboard/allStudents" className="text-white">
             <FontAwesomeIcon icon={faUsers} /> <span>Students</span>
           </Link>
         </li>
