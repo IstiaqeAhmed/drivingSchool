@@ -16,16 +16,25 @@ const customStyles = {
 Modal.setAppElement("#root");
 
 const AdmissionForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
-  //   const {
-  //     register,
-  //     handleSubmit,
-  //     formState: { errors },
-  //   } = useForm();
-  //   const onSubmit = (data) => console.log(data);
   const { register, handleSubmit, errors } = useForm();
+
   const onSubmit = (data) => {
-    console.log(data);
-    closeModal();
+    data.service = appointmentOn;
+    data.date = date;
+    data.created = new Date();
+
+    fetch("http://localhost:5000/addAdmittance", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((success) => {
+        if (success) {
+          closeModal();
+          alert("Appointment created successfully.");
+        }
+      });
   };
 
   return (

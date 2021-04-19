@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import * as firebase from "firebase/app";
+import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from "./firebase.config";
 import { UserContext } from "../../../App";
@@ -70,7 +70,12 @@ const Login = () => {
           </div>
         </div>
         <div className="col-md-6 d-none d-md-block align-self-end">
-          <img className="img-fluid" src={LoginBg} alt="" />
+          <img
+            style={{ height: "90vh" }}
+            className="img-fluid"
+            src={LoginBg}
+            alt=""
+          />
         </div>
       </div>
     </div>
