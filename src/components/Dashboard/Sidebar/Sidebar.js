@@ -40,7 +40,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/addDoctor" className="text-white">
+          <Link to="/addTrainer" className="text-white">
             <FontAwesomeIcon icon={faUserPlus} /> <span>Add Trainer</span>
           </Link>
         </li>
