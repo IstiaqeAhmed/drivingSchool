@@ -5,6 +5,7 @@ import Home from "./components/Home/Home/Home";
 import Admittance from "./components/Admittance/Admittance/Admittance";
 import Login from "./components/Login/Login/Login";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
+import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 import AllStudents from "./components/AllStudents/AllStudents/AllStudents";
 import AddTrainer from "./components/AddTrainer/AddTrainer";
 
@@ -26,9 +27,9 @@ function App() {
           <Route path="/admittance">
             <Admittance></Admittance>
           </Route>
-          <Route path="/dashboard/admittance">
+          <PrivateRoute path="/dashboard/admittance">
             <Dashboard></Dashboard>
-          </Route>
+          </PrivateRoute>
           <Route path="/dashboard/allStudents">
             <AllStudents></AllStudents>
           </Route>
