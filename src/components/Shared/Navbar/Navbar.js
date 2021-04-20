@@ -1,5 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCog,
+  faSignOutAlt,
+  faCalendar,
+  faGripHorizontal,
+  faUsers,
+  faHome,
+  faUserPlus,
+} from "@fortawesome/free-solid-svg-icons";
+import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
 
 const Navbar = () => {
   return (
@@ -27,23 +38,23 @@ const Navbar = () => {
                 Home <span className="sr-only">(current)</span>
               </a>
             </li> */}
-
+            <li className="nav-item">
+              <Link to="/" className="nav-link mr-5 text-blue">
+                Home
+              </Link>
+            </li>
             <li className="nav-item">
               <Link className="nav-link mr-5  " to="dashboard/admittance">
                 Dashboard
               </Link>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link ms-5" href="#">
+            <li className="nav-item">
+              <Link className="nav-link mr-5  " to="dashboard/allStudents">
                 Students
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link ms-5" href="#">
-                PROGRAMS
-              </a>
-            </li>
+
             <li className="nav-item">
               <Link className="nav-link mr-5 " to="/dashboard">
                 Admin

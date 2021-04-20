@@ -33,7 +33,7 @@ const AdmissionForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
       .then((success) => {
         if (success) {
           closeModal();
-          alert("Appointment created successfully.");
+          alert("Admission created successfully.");
         }
       });
   };

@@ -8,6 +8,7 @@ import {
   faCalendar,
   faGripHorizontal,
   faUsers,
+  faHome,
   faUserPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
@@ -38,6 +39,11 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
           </Link>
         </li>
+        <li>
+          <Link to="/" className="text-white">
+            <FontAwesomeIcon icon={faHome} /> <span>Home</span>
+          </Link>
+        </li>
 
         {isTrainer && (
           <div>
@@ -48,11 +54,11 @@ const Sidebar = () => {
             </li>
             <li>
               <Link to="/dashboard/allStudents" className="text-white">
-                <FontAwesomeIcon icon={faUsers} /> <span>Students</span>
+                <FontAwesomeIcon icon={faUsers} /> <span>Review Students</span>
               </Link>
             </li>
             <li>
-              <Link to="/driving/admittance" className="text-white">
+              <Link to="/admittance" className="text-white">
                 <FontAwesomeIcon icon={faFileAlt} /> <span>Course Plan</span>
               </Link>
             </li>
