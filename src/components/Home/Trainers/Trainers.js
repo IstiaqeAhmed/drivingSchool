@@ -3,7 +3,7 @@ import Trainer from "../Trainer/Trainer";
 
 const Trainers = () => {
   return (
-    <section className="doctors">
+    <section className="trainers">
       <div className="container">
         <h5 className="text-center  text-primary mb-5">Our Trainer</h5>
         <div className="row">
