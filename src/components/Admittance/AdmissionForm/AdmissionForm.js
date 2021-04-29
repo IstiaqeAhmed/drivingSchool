@@ -24,7 +24,7 @@ const AdmissionForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
     data.date = date;
     data.created = new Date();
 
-    fetch("http://localhost:5000/addAdmittance", {
+    fetch("https://peaceful-caverns-69164.herokuapp.com/addAdmittance", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

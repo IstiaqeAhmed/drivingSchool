@@ -6,7 +6,7 @@ const AllStudents = () => {
   const [admittances, setAdmittances] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/admittance")
+    fetch("https://peaceful-caverns-69164.herokuapp.com/admittance")
       .then((res) => res.json())
       .then((data) => setAdmittances(data));
   }, []);

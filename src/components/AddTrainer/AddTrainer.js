@@ -21,7 +21,7 @@ const AddTrainer = () => {
     formData.append("name", info.name);
     formData.append("email", info.email);
 
-    fetch("http://localhost:5000/addATrainer", {
+    fetch("https://peaceful-caverns-69164.herokuapp.com/addATrainer", {
       method: "POST",
       body: formData,
     })

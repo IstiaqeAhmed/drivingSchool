@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCog,
   faSignOutAlt,
@@ -19,7 +19,7 @@ const Sidebar = () => {
   const [isTrainer, setIsTrainer] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/isTrainer", {
+    fetch("https://peaceful-caverns-69164.herokuapp.com/isTrainer", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email: loggedInUser.email }),
